@@ -14,5 +14,6 @@ namespace MVP_Weather.Model
         public string Description { get; set; }
         public string Icon { get; set; }
         public double WindSpeed { get; set; }
+        public string Date { get; set; }
     }
 }

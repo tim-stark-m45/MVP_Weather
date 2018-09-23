@@ -25,6 +25,12 @@ namespace MVP_Weather.Presenter
         {
             Api.GetWeathers(city);
             View.ShowWeather();
+            View.ShowWeather2();
+            View.ShowWeather3();
+            View.ShowWeather4();
+            View.ShowWeather5();
         }
+
+
     }
 }

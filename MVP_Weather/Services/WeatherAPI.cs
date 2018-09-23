@@ -31,7 +31,8 @@ namespace MVP_Weather.Services
                     MaxTemp = Double.Parse(item["main"]["temp_max"].ToString()),
                     Description=Convert.ToString(item["weather"][0]["description"]),
                     WindSpeed = Double.Parse(item["wind"]["speed"].ToString()),
-                    Icon = Convert.ToString(item["weather"][0]["icon"])
+                    Icon = Convert.ToString(item["weather"][0]["icon"]),
+                    Date=Convert.ToString(item["dt_txt"])
                 });
             }
             city.Weathers = weathers; 

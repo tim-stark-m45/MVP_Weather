@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MVP_Weather.Model
 {
+    [Serializable]
     public class City
     {
         public string Name { get; set; }
