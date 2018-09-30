@@ -21,6 +21,12 @@ namespace MVP_Weather.Presenter
             View.ShowCities(Storage.Cities);
         }
 
+        public void RemoveCity(int id)
+        {
+            Storage.RemoveCity(id);
+            View.ShowCities(Storage.Cities);
+        }
+
         public void GetWeather(City city)
         {
             Api.GetWeathers(city);

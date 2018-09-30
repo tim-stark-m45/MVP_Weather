@@ -20,9 +20,9 @@ namespace MVP_Weather.Services
             Cities.Add(city);
         }
 
-        public void RemoveCity(City city)
+        public void RemoveCity(int id)
         {
-            Cities.Remove(city);
+            Cities.RemoveAt(id);
         }
     }
 }

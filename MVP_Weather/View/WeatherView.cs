@@ -35,6 +35,12 @@ namespace MVP_Weather.View
             }
         }
 
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            if (CityListbox.SelectedIndex != -1)
+                Presenter.RemoveCity(CityListbox.SelectedIndex);
+        }
+
         public void ShowCities(IEnumerable<City> cities)
         {
             CityListbox.DataSource = null;
